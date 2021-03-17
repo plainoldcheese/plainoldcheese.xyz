@@ -1,0 +1,41 @@
+body {
+	max-width: 800px ;
+	margin: auto ;
+	padding: 0 16px ;
+}
+
+h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+}
+
+img {
+	max-width: 600px ;
+	width: 100% ;
+	margin: auto ;
+	display: block ;
+}
+
+code {
+	overflow-wrap: break-word ;
+	color: lime ;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: black ;
+		color: gainsboro ;
+	}
+	a {
+		color: lightblue ;
+	}
+	a:visited {
+		color: plum ;
+	}
+	h2 {
+		color: tomato ;
+	}
+}

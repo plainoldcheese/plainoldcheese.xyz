@@ -1,0 +1,38 @@
+body{
+    font-family: monospace;
+    font-size: 24pt;
+    background-color: black;
+    color: #ccc;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body  { background:  black; color: #ccc; }
+    #current-day { background: #ccc; color:  black; }
+}
+  
+@media (prefers-color-scheme: light) {
+    body { background: #ccc; color:  black; }
+    #current-day  { background:  black; color: #ccc; }
+}
+
+table{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+#header{
+    font-size: 1em;
+}
+td{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#current-day{
+    background-color: #ccc;
+    color: black;
+}
