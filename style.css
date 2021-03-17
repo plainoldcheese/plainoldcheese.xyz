@@ -1,47 +1,54 @@
-:root{
-    --content-width: 650px;
+:root {
+  --content-width: 650px;
 }
-body{
-    background-image: url(bg.png);
-    background-repeat: repeat;
+body {
+  background-image: url(bg.png);
+  background-repeat: repeat;
 }
-main{
-    width: var(--content-width);
-    height: calc(var(--content-width)/2);
-    padding-bottom: 48px;
-    margin: 0 auto;
-    margin-top: 25vh;
-    border-style: solid;
-    border-color: gray;
-    background-color: beige;
-    padding: 4em;
+main {
+  width: var(--content-width);
+  height: calc(var(--content-width) / 2);
+  padding-bottom: 48px;
+  margin: 0 auto;
+  margin-top: 25vh;
+  border-style: solid;
+  border-color: gray;
+  background-color: beige;
+  padding: 4em;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
-h1{
-    font-family: cursive;
+h1 {
+  font-family: cursive;
 }
-.links{
-    float: left;
-    width: calc(var(--content-width) / 2);
+.links {
+  float: left;
+  width: calc(var(--content-width) / 2);
 }
-#pizza{
-    float: right;
-    transition:  transform 0.5s linear;
-    display: inline;
+#pizza {
+  float: right;
+  transition: transform 0.5s linear;
+  display: inline;
 }
-#pizza:hover{
-    transform: rotate(360deg);
+#pizza:hover {
+  transform: rotate(360deg);
 }
-#homepage-heading-link{
-    display: inline-block;
-    transition:  transform 0.3s;
+#homepage-heading-link {
+  display: inline-block;
+  transition: transform 0.3s;
 }
-#homepage-heading-link:hover{
-    transform: scale(1.1);
+#homepage-heading-link:hover {
+  transform: scale(1.1);
+}
+#use-a-pc {
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: 64px;
+  color: gray;
 }
