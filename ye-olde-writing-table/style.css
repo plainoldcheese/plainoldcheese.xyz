@@ -1,0 +1,83 @@
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+/* 2 column main text */
+
+main {
+  columns: 300px 2;
+  column-fill: balance;
+  column-gap: 24px;
+  text-align: justify;
+}
+
+/* drop caps */
+main > p:first-of-type::first-letter {
+  color: maroon;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/* 3 main columns */
+
+main{
+    float: left;
+    padding: 48px 48px;
+    margin: 24px 5%;
+    width: 50%;
+}
+
+aside,
+nav {
+  margin-top: 72px;
+  width: 15%;
+}
+
+nav {
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
+footer:before {
+  content: "";
+  clear: both;
+}
+
+/* styling */
+
+nav > ol {
+  list-style-type: lower-roman;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+
+h1,
+h2,
+h3 {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
