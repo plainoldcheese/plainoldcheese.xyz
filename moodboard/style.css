@@ -54,6 +54,7 @@ header{
 
 /*main container*/
 main {
+  margin: var(--grid-gap);
   column-count: 4;
   column-gap: calc(var(--grid-gap) * 1.2); /* for some reason theres an extra gap above the items that isn't part of the element 🤷‍♂️*/
 }

@@ -1,8 +1,8 @@
 :root {
   --content-width: 384px;
   --font-color: #b6b6b6;
-  --bg-color: #1d1d43;
-  --secondary-bg-color: #3d3d70;
+  --bg-color: #150d29;
+  --secondary-bg-color: #2b233e;
   --link-color: #62b8f1;
   --link-visited-color: #8162f1;
 }
@@ -28,7 +28,7 @@ main {
 article {
   max-width: var(--content-width);
   margin: 0 auto;
-  background-color: black;
+  background-color: var(--bg-color);
   color: white;
   padding: 12px;
   margin-bottom: 24px;
