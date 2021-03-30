@@ -1,14 +1,25 @@
 :root {
   --content-width: 384px;
   --font-color: #b6b6b6;
-  --bg-color: #150d29;
-  --secondary-bg-color: #2b233e;
+  --bg-color: #100c1a;
+  --secondary-bg-color: #322a46;
+  --accent-color: #250d3f;
   --link-color: #62b8f1;
   --link-visited-color: #8162f1;
 }
 
+html{
+  background: var(--secondary-bg-color);
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(var(--accent-color) 15%, transparent 16%),
+    radial-gradient(var(--accent-color) 15%, transparent 16%);
+  background-size: 8px 16px;
+  background-position: 10px 2px, 5px 10px;
+}
+
 body {
-  background-color: var(--secondary-bg-color);
+  background-color: transparent;
   max-width: calc(var(--content-width) + 25%);
   margin: 0 auto;
   font-family: "Verdana", sans-serif;
@@ -20,6 +31,7 @@ header{
   margin: 4em 1em;
 }
 article {
+  position: relative;
   max-width: var(--content-width);
   margin: 0 auto;
   background-color: var(--bg-color);
@@ -27,6 +39,12 @@ article {
   padding: 1em;
   font-size: inherit;
   margin-bottom: 24px;
+  transition: all 0.3s ease-in-out;
+}
+article:hover{
+  bottom: 6px;
+  right: 6px;
+  box-shadow: 6px 6px 0px var(--accent-color);
 }
 
 time {
@@ -78,8 +96,13 @@ img {
   margin: 12px auto;
 }
 
+blockquote{
+  font-family: "Bookman Old Style", serif;
+  font-style: italic;
+}
 footer{
   text-align: center;
+  margin-bottom: 5px;
 }
 
 @media only screen 
