@@ -5,8 +5,8 @@ body {
     color: #513539;
 }
 img{
-    width: inherit;
-    margin-top: 2ch;
+    width: 90%;
+    margin-top: 2ch auto;
     margin-bottom: 2ch;
     border-style: ridge;
     /* text-shadow: 2px 2px grey; */
@@ -23,7 +23,7 @@ main {
     margin-bottom: 4ch;
     padding-left: 2ch;
     padding-right: 2ch;
-    width: 80ch;
+    max-width: 80ch;
     margin:0 auto;
     background-color: #E9E2E6;
     border-style: ridge;

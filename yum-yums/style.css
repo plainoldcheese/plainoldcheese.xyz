@@ -19,11 +19,6 @@ img {
 	display: block ;
 }
 
-code {
-	overflow-wrap: break-word ;
-	color: lime ;
-}
-
 @media (prefers-color-scheme: dark) {
 	body {
 		background: black ;

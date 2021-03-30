@@ -7,7 +7,15 @@ lavenderblush
 steelblue
 peru
 indianred
+thistle
 */
+
+/* to do */
+/* 
+ * add some way to show the source link of the image on hover
+ * add async loading 
+ * lazy loading maybe
+ */
 
 /* css variables */
 :root {
@@ -15,7 +23,8 @@ indianred
   --grid-gap: 15px;
 }
 
-/* general stylin */
+
+/* general styling */
 body {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -23,7 +32,7 @@ body {
   background-color: lavenderblush;
   color: peru;
   font-family: "Georgia", serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -51,6 +60,9 @@ header{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+header>h1{
+    text-shadow: 4px 4px lavender;
+}
 
 /*main container*/
 main {
@@ -68,9 +80,7 @@ main > * {
   border-radius: calc(var(--grid-gap)*0.8);
   margin: 0px;
   margin-bottom: var(--grid-gap);
-  transition: box-shadow 0.2s ease-in-out;
-  transition: transform 0.1s ease-in-out;
-  
+  transition: all 0.2s ease-in-out;
 }
 
 main > *:hover{
@@ -84,7 +94,7 @@ main > blockquote,
 main > code,
 main > pre {
     border-radius: var(--grid-gap);
-    padding: 20px;
+    padding: 60px 20px;
     background-color: bisque;
 }
 
@@ -92,6 +102,22 @@ footer {
   margin-top: 100px;
 }
 
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 750px) {
+/* Styles */
+    main{
+        column-count: 2;
+    }
+}
+
+/* i wish this worked for showing the link on hover :( */
+/* 
+    img:hover::after {
+        content: attr(src); 
+        display: block;
+    }
+*/
 
 /* for when layout.css.grid-template-masonry-value.enabled finally gets enabled in firefox by default */
 

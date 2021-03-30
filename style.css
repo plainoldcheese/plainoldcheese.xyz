@@ -7,7 +7,7 @@ body {
   font-family: serif;
 }
 main {
-  width: var(--content-width);
+  max-width: var(--content-width);
   height: 33vh;
   padding-bottom: 48px;
   margin: 0 auto;
@@ -47,9 +47,25 @@ h1 {
   transform: scale(1.1);
 }
 #use-a-pc {
-  display: block;
-  position: relative;
-  float: right;
-  margin-top: 64px;
-  color: gray;
+  display: none;
+}
+
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 750px) {
+/* Styles */
+    main{
+        height: 100vh;
+        margin: 0 auto;
+        padding: 5px ;
+        text-align: center;
+    }
+    #use-a-pc {
+      display: block;
+    }
+    #pizza{
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
 }
