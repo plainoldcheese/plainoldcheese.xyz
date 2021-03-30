@@ -1,0 +1,109 @@
+/* gallery */
+/* pure html color scheme */
+/*
+bisque
+lavender
+lavenderblush
+steelblue
+peru
+indianred
+*/
+
+/* css variables */
+:root {
+  --content-width: 800px;
+  --grid-gap: 10px;
+}
+
+/* general stylin */
+body {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: lavenderblush;
+  color: peru;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+code {
+  background-color: lavender;
+  color: steelblue;
+  border-radius: 2px;
+  padding: 2px;
+  font-family: "mononoki", "Consolas", monospace;
+}
+
+a{
+    color: steelblue;
+    text-decoration: none;
+}
+a:visited{
+    color: indianred;
+}
+a:hover{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*main container*/
+main {
+  column-count: 4;
+  column-gap: calc(var(--grid-gap) * 1.2); /* for some reason theres an extra gap above the items that isn't part of the element 🤷‍♂️*/
+}
+
+/* all the types of items in the masonry grid */
+main > * {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: calc(var(--grid-gap)*0.8);
+  margin: 0px;
+  margin-bottom: var(--grid-gap);
+  transition: transform .2s ease-in-out;
+}
+
+main > *:hover{
+    transform: scale(1.05);
+}
+
+main > a,
+main > blockquote, 
+main > code,
+main > pre {
+    border-radius: var(--grid-gap);
+    padding: 20px;
+    background-color: bisque;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+
+/* for when layout.css.grid-template-masonry-value.enabled finally gets enabled in firefox by default */
+
+/*
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--content-width) / 5), 1fr));
+    grid-template-rows: masonry;
+    grid-gap: var(--grid-gap);
+}
+
+main > * {
+  max-width: calc(var(--content-width) / 4);
+  width: 100%;
+  height: auto;
+  border-radius: var(--grid-gap);
+}
+  
+*/
