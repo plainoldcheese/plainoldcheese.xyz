@@ -5,6 +5,7 @@ body {
   background-image: url(bg.png);
   background-repeat: repeat;
   font-family: serif;
+  color: #209A50;
 }
 main {
   max-width: var(--content-width);
@@ -13,13 +14,13 @@ main {
   margin: 0 auto;
   margin-top: 25vh;
   border-style: solid;
-  border-color: gray;
-  background-color: beige;
+  border-color: #205020;
+  background-color: #072007;
   padding: 4em;
 }
 a {
   text-decoration: none;
-  color: black;
+  color:#209A50;
 }
 a:hover {
   text-decoration: underline;
