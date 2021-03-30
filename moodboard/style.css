@@ -12,7 +12,7 @@ indianred
 /* css variables */
 :root {
   --content-width: 800px;
-  --grid-gap: 10px;
+  --grid-gap: 15px;
 }
 
 /* general stylin */
@@ -67,12 +67,16 @@ main > * {
   border-radius: calc(var(--grid-gap)*0.8);
   margin: 0px;
   margin-bottom: var(--grid-gap);
-  transition: transform .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  
 }
 
 main > *:hover{
     transform: scale(1.05);
+    box-shadow: 5px 5px 2px thistle;
 }
+
 
 main > a,
 main > blockquote, 
