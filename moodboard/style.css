@@ -21,6 +21,13 @@ thistle
 :root {
   --content-width: 800px;
   --grid-gap: 15px;
+  --bg-color: lavenderblush;
+  --text-color: peru;
+  --accent-color: lavender;
+  --link-color: steelblue;
+  --link-visited-color: indianred;
+  --shadow-color: thistle;
+  --tile-bg-color: bisque;
 }
 
 
@@ -29,27 +36,27 @@ body {
   max-width: var(--content-width);
   margin: 0 auto;
   margin-bottom: 100px;
-  background-color: lavenderblush;
-  color: peru;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Georgia", serif;
   font-size: 16px;
   text-align: center;
 }
 
 code {
-  background-color: lavender;
-  color: steelblue;
+  background-color: var(--accent-color);
+  color: var(--link-color);
   border-radius: 2px;
   padding: 2px;
   font-family: "mononoki", "Consolas", monospace;
 }
 
 a{
-    color: steelblue;
+    color: var(--link-color);
     text-decoration: none;
 }
 a:visited{
-    color: indianred;
+    color: var(--link-visited-color);
 }
 a:hover{
     text-decoration: underline;
@@ -61,7 +68,7 @@ header{
     margin-bottom: 50px;
 }
 header>h1{
-    text-shadow: 4px 4px lavender;
+    text-shadow: 4px 4px var(--accent-color);
 }
 
 /*main container*/
@@ -72,7 +79,8 @@ main {
 }
 
 /* all the types of items in the masonry grid */
-main > * {
+main > *,
+main > a > img{
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -85,17 +93,20 @@ main > * {
 
 main > *:hover{
     transform: scale(1.05);
-    box-shadow: 5px 5px 2px thistle;
+    box-shadow: 5px 5px 2px var(--shadow-color);
 }
-
 
 main > a,
 main > blockquote, 
 main > code,
-main > pre {
+main > pre{
     border-radius: var(--grid-gap);
-    padding: 60px 20px;
-    background-color: bisque;
+    padding: 20px;
+    background-color: var(--tile-bg-color);
+}
+
+main > a > img{
+  margin-bottom: 0px;
 }
 
 footer {

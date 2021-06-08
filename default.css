@@ -1,6 +1,6 @@
 /* some better defaults for unstyled pages, it also provides a dark theme for users with it enabled*/
 body {
-  font-size: 14px;
+  font-size: 18px;
   margin: auto;
   padding: 0 16px;
   line-height: 1.2em;
@@ -36,6 +36,6 @@ h1,h2{
   }
   h1,
   h2 {
-    color: tomato;
+    color: greenyellow;
   }
 }
